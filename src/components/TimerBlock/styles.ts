@@ -1,6 +1,7 @@
 import styled from "styled-components"; // ✅ Don't forget this!
 import { Row } from "antd";
 
+// this should be automatically flexed
 export const TimerSection = styled.section`
   height: 30vh;
   display: flex;
@@ -12,7 +13,6 @@ export const TimerRow = styled(Row)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
 `;
 
 export const ClockDisplay = styled("div")`
@@ -20,7 +20,7 @@ export const ClockDisplay = styled("div")`
   font-weight: bold;
   text-align: center;
   color: #111827; // Elegant deep black-blue
-  text-shadow: none; // Remove glow for cleaner look
+  text-shadow: none; 
 `;
 
 export const RemainingTime = styled("div")`
@@ -28,5 +28,5 @@ export const RemainingTime = styled("div")`
   font-weight: bold;
   text-align: center;
   color: #6b7280; // Soft gray
-  text-shadow: none; // Remove glow for cleaner look
+  text-shadow: none; 
 `;

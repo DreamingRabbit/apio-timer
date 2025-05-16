@@ -1,9 +1,9 @@
-// components/NoticeBoard/styles.ts
 import styled from "styled-components";
 import { Row } from "antd";
 
+// this should be automatically flexed
 export const BoardSection = styled.section`
-  height: 45vh;
+  height: 50vh; 
   overflow-y: auto;
   padding: 2rem;
 `;

@@ -1,9 +1,9 @@
-// components/TitleBlock/styles.ts
 import styled from "styled-components";
 import { Row } from "antd";
 
+// this should be automatically flexed
 export const TitleSection = styled.section`
-  height: 25vh;
+  height: 15vh;
   display: flex;
   align-items: center;
   justify-content: center;
