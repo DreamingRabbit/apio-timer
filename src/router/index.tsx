@@ -7,24 +7,31 @@ import { Styles } from "../styles/styles";
 
 const Router = () => {
   return (
-    <Suspense fallback={null}>
-      <Styles />
-      <Header />
-      <Switch>
-        {routes.map((routeItem) => {
-          return (
+  <Suspense fallback={null}>
+    <Styles />
+    <div style={{
+      display: "flex",
+      flexDirection: "column",
+      height: "100vh",
+      overflow: "hidden",
+    }}>
+      <Header /> 
+      <div style={{ flex: 1, display: "flex", flexDirection: "column" }}>
+        <Switch>
+          {routes.map(routeItem => (
             <Route
               key={routeItem.component}
               path={routeItem.path}
               exact={routeItem.exact}
               component={lazy(() => import(`../pages/${routeItem.component}`))}
             />
-          );
-        })}
-      </Switch>
+          ))}
+        </Switch>
+      </div>
       <Footer />
-    </Suspense>
-  );
+    </div>
+  </Suspense>
+    );
 };
 
 export default Router;

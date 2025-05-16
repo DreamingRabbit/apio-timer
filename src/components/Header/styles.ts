@@ -2,23 +2,24 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { MenuOutlined } from "@ant-design/icons";
 
-export const HeaderSection = styled("header")`
-  padding: 1rem 0.5rem;
-
-  .ant-row-space-between {
-    align-items: center;
-    text-align: center;
-  }
+export const HeaderSection = styled.header`
+  flex-shrink: 0;
+  padding: 1rem;
+  height: auto;
 `;
 
 export const LogoContainer = styled(Link)`
   display: flex;
+  height: auto;
+  align-items: center;
 `;
 
 export const NavLink = styled("div")`
   display: inline-block;
   text-align: center;
 `;
+
+
 
 export const CustomNavLink = styled("div")`
   width: 203px;
