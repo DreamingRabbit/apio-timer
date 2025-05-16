@@ -1,17 +1,14 @@
-🕒 Simple APIO Timer
+# 🕒 Simple APIO Timer
 
 Adapted from the landy-react-template
 
-⸻
 
-✨ Features
+## ✨ Features
 	•	✅ Editable Title
 	•	⏳ Live Countdown to Exam End Time
 	•	📝 Markdown-Supported Notice Board
 
-⸻
-
-🚀 How to Use
+## 🚀 How to Use
 	1.	Click the APIO logo in the top-left corner to log in.
 	2.	Use the admin password: admin123.
 	3.	Once logged in, you can:
