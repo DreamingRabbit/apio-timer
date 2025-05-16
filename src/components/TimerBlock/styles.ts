@@ -1,4 +1,4 @@
-import styled from "styled-components"; // ✅ Don't forget this!
+import styled from "styled-components";
 import { Row } from "antd";
 
 // this should be automatically flexed
