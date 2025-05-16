@@ -39,7 +39,7 @@ const Header = ({ t }: { t: TFunction }) => {
         <Row justify="space-between" align="middle">
           <LogoContainer to="#" aria-label="login/logout" onClick={handleLogoClick}>
             {/* <SvgIcon src="logo2.png" width="101px" height="64px" /> */}
-            <img src={`${process.env.PUBLIC_URL}/img/svg/logo2.png`} alt="Logo" />
+            <img src={`${process.env.PUBLIC_URL}/img/svg/logo2.png`} alt="APIO Logo" style={{ width: "120px", height: "auto" }} />
           </LogoContainer>
           <Burger onClick={toggleButton}>
             <Outline />
